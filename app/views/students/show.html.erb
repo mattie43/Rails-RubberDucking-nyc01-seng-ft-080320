@@ -1,0 +1,7 @@
+<h1><%= @student.name %></h1>
+Duck list:
+<ul>
+<% @student.ducks.each do |d| %>
+<li><%= link_to d.name, duck_path(d) %></li>
+<% end %>
+</ul>
